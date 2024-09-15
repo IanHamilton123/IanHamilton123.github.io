@@ -1,0 +1,225 @@
+/* General Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5vw;
+    background-color: #f7f8fa;
+}
+
+/* Center content with proper margin and padding */
+body > header, body > main, body > footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Padding added to avoid edges of the page */
+}
+
+/* Logo */
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 12px;
+    background-color: #ff6347; /* Coral background for excitement */
+    color: #fff; /* White text for contrast */
+    border-radius: 15px; /* Smooth, rounded logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    transition: transform 0.3s ease;
+    font-family: "Fredoka One", sans-serif;
+    text-align: center;
+    width: fit-content;
+}
+
+#logo:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Logo Text */
+#logo h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #ffffff; /* Pure white for clarity */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.4); /* Soft, glowing text shadow */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+body > header {
+    background-color: #1e90ff; /* Dodger blue for the header */
+    color: white;
+    display: flex;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+#nav-ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-ul > li {
+    padding: 8px;
+    margin: 16px;
+    list-style: none;
+}
+
+body > header > nav > ul {
+    list-style: none;
+}
+
+.navbutton {
+    color: #1e90ff; /* Matching the header color */
+    background-color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 2px solid #1e90ff;
+    border-radius: 50px; /* Rounded buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbutton:hover {
+    background-color: #1e90ff;
+    color: white;
+}
+
+/* Main Content Area */
+body > main article {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Flexbox layout for main content */
+#main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Articles section */
+#articles {
+    width: 48%;
+}
+
+#articles h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article h3 {
+    color: #333;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.article p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Contact Form Section */
+#contact-form {
+    width: 48%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+    text-align: center;
+    margin-top: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005ab5;
+}
+
+/* Footer */
+body > footer {
+    background-color: #1e90ff;
+    color: white;
+    padding: 30px 20px; /* Increased padding for spacing */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#footer-ul > div > li {
+    margin-left: 12px;
+    list-style: none;
+}
+
+#footer-ul > div > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-ul > div > li > a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body > header {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+    #main-content {
+        flex-direction: column;
+    }
+
+    #main-content > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
